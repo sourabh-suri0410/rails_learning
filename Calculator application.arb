@@ -1,0 +1,72 @@
+#Calculator application
+
+
+class Calculator
+    @x = 0
+    @y = 0
+    @z = 0
+
+    def askValues
+       
+        p "Enter First number"
+        @x  = gets.chomp.to_i
+
+        p "Enter 2nd number"
+        @y  = gets.chomp.to_i
+
+      
+    end #def AskValues1(x,y)
+
+    def skValues2
+     
+        return 15
+     
+
+    end #def AskValues2(x,y)
+
+    def add
+       
+        askValues
+        #y = askValues2
+        
+        @z = @x + @y
+
+        puts "The answer is : #{@z}"
+    end #def Add()
+
+    def sub
+        askValues
+        @z = @x - @y
+
+        puts "The answer is : #{@z}"
+     end #def Sub()
+
+    def multiply
+        askValues
+        @z = @x * @y
+
+        puts "The answer is : #{@z}"
+   end #def Multiply()
+
+    def divide
+        askValues
+        @z = @x / @y
+
+        puts "The answer is : #{@z}"
+     end #def Divide()
+    
+end #class Calculator
+
+calc = Calculator.new()
+
+puts "Addition"
+calc.add
+
+puts "Subtraction"
+calc.sub
+
+puts "Multiply"
+calc.multiply
+
+puts "Divide"
+calc.divide

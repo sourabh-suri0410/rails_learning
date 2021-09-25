@@ -1,0 +1,15 @@
+x = [1,"two",3,4.5,true,"Sourabh"]
+
+puts x[4]
+
+puts x.class 
+
+x.each {|y| puts y}
+
+x.each do |y|
+    puts y
+end
+
+
+a = [1,2,3,4,5,6,7,8,9,10]
+a.each {|b| puts b*7}

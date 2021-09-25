@@ -1,0 +1,45 @@
+class Criminals
+    @@no_Of_Criminals = 0
+    @name = ""
+    @crime = ""
+
+    def initialize(name1,crime1)
+        @Name = name1
+        @Crime = crime1
+        @@no_Of_Criminals +=1
+    end
+
+    def Kill
+        puts "#nName} is killed"
+
+        if @@no_Of_Criminals >0
+            @@no_Of_Criminals -=1
+        else
+            puts("There is no criminal left")
+            
+        end
+    end
+
+    def ShowTotalCriminals
+        puts "The total no of criminals are : #{@@no_Of_Criminals}"
+    end
+
+end
+
+criminal1 = Criminals.new('Dave', 'Burglary')
+criminal1.ShowTotalCriminals
+criminal2 = Criminals.new('Pete', 'Theft')
+criminal2.ShowTotalCriminals
+criminal3 = Criminals.new('Ted', 'Murder')
+criminal3.ShowTotalCriminals
+criminal4 = Criminals.new('John', 'Kidnap')
+criminal4.ShowTotalCriminals
+criminal1.Kill()
+criminal3.ShowTotalCriminals
+criminal4.Kill()
+criminal4.ShowTotalCriminals()
+
+
+
+
+
